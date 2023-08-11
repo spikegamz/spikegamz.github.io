@@ -27,24 +27,19 @@ const page3btn2 = document.querySelector("#page3btn2");
 
 
 
-
+//logo returns to start page
 const returntoindex = document.querySelector(".mainpageimage");
+
+//main btns
 const mainpagebtn1 = document.querySelector("#mainpage1btn");
 const mainpagebtn2 = document.querySelector("#mainpage2btn");
 const mainpagebtn3 = document.querySelector("#mainpage3btn");
 
+//containers
 var allpages=document.querySelectorAll(".page");
 var alltextbubbles = document.querySelectorAll(".textbubble");
 var allsubbubbles = document.querySelectorAll(".subbubble");
 
-var animationtimer  = 0;
-const textfadein = [
-    {transform:"translateX(50px)"}];
-
-const fadeintiming = {
-    duration: 200,
-    iterations: 1,
-};
 
 //select all subtopic pages
 console.log(allpages);
@@ -84,7 +79,7 @@ function pageresize(){
         onepage.style.height=vw(100)*3;
     };
 }
-var id = null;
+
 function showb(bubblenumber){
     hideallbub();
     let onetextbubble = document.querySelector("#textbubble" + bubblenumber);
