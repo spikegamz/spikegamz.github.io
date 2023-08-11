@@ -77,7 +77,7 @@ function vw(percent){
 function pageresize(){
     for(let onepage of allpages)
     {
-        onepage.style.height=vw(100)*3;
+        onepage.style.height=vw(100)*5;
     };
 }
 
