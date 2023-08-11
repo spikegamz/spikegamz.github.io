@@ -51,6 +51,7 @@ console.log(allpages);
 hideall();
 hideallbub();
 hideallsubbub();
+pageresize();
 function hideall(){ //function to hide all pages
 for(let onepage of allpages){ //go through all subtopic pages
 onepage.style.display="none"; //hide it
@@ -67,7 +68,8 @@ function hideallsubbub(){
     }
 }
 
-/* calculate vh and vw so the animations are scaled properly*/
+
+/* calculate vh and vw so the pages*/
 function vh(percent){
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
     return (percent * h) / 100;
@@ -76,7 +78,20 @@ function vw(percent){
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     return (percent * w) / 100;
 }
+function pageresize(){
+    for(let onepage of allpages)
+    {
+        if(vh(100)>=vw(100))
+        {
+            onepage.style.height=vw(100)*5;
 
+        }
+        else{
+            onepage.style.height=vw(100)*10;
+            
+        }
+    };
+}
 var id = null;
 function showb(bubblenumber){
     hideallbub();
