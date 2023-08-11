@@ -215,8 +215,8 @@ nav ul{display:none;} /*hide the menu item list*/
     left:60vw;
     justify-content: center;
     width:30vw;
-    margin-top:6vw;
-    margin-left:2vw;
+    margin-top:6vh;
+    margin-left:1vh;
 }
 .subbubble{
    
