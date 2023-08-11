@@ -87,7 +87,7 @@ function pageresize(){
 
         }
         else{
-            onepage.style.height=vw(100)*10;
+            onepage.style.height=vw(100)*5;
             
         }
     };
