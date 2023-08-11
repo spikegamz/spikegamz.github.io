@@ -83,11 +83,11 @@ function pageresize(){
     {
         if(vh(100)>=vw(100))
         {
-            onepage.style.height=vw(100)*5;
+            onepage.style.height=vw(100)*10;
 
         }
         else{
-            onepage.style.height=vw(100)*5;
+            onepage.style.height=vw(100)*7;
             
         }
     };
