@@ -27,6 +27,7 @@ const page3btn2 = document.querySelector("#page3btn2");
 
 
 
+
 //logo returns to start page
 const returntoindex = document.querySelector(".mainpageimage");
 
@@ -103,12 +104,15 @@ onepage.style.display="block";
 eventhandler functions to call show function*/
 page1btn.addEventListener("click", function () {
 show(1);
+pageresize();
 });
 page2btn.addEventListener("click", function () {
 show(2);
+pageresize();
 });
 page3btn.addEventListener("click", function () {
 show(3);
+pageresize();
 });
 
 //pg1 img buttons
@@ -230,13 +234,19 @@ page3btn2.addEventListener("click", function () {
 
 
 mainpagebtn1.addEventListener("click", function(){
+    pageresize();
     show(1);
+    
 })
 mainpagebtn2.addEventListener("click", function(){
+    pageresize();
     show(2);
+   
 })
 mainpagebtn3.addEventListener("click", function(){
+    pageresize();
     show(3);
+   
 })
 window.addEventListener("resize",function(){
     pageresize();
@@ -257,4 +267,5 @@ else menuItemsList.style.display="block";
 //return to main index button
 returntoindex.addEventListener("click", function(){
     show(0);
+    
 })
