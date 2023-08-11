@@ -25,7 +25,9 @@ nav ul li{display:inline;}
 
 /* smooth scrolling*/
 html, body{
+    
     scroll-behavior: smooth;
+    /* this removes any chance of horizontal scroll bar appearing*/
     max-width: 100%;
     overflow-x: hidden;
     
