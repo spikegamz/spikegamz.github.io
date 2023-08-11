@@ -1,5 +1,5 @@
 
-.page{width:100vw;height:200vh;border:1px solid #C4C4C4};
+.page{width:100vw;height:200vh;border:1px solid #C4C4C4}
 .textbubble{width: 3vw; height: 3vh;
 
     transition: transform 200ms;
@@ -7,7 +7,7 @@
 
 }
 nav ul li{display:inline;}
-#page0{background:#C4C4C4;}
+#page0{background:#C4C4C4}
 #page1{background:#C4C4C4}
 
 #page2{background:#C4C4C4}
